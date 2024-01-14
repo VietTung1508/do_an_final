@@ -1,0 +1,137 @@
+.heroContainer {
+  padding: 8rem 8rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.heroContainer .heroWrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  position: relative;
+}
+.heroContainer .heroWrapper .blueCircle {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  z-index: -99;
+  position: absolute;
+  bottom: 0;
+  background: #2879fe;
+}
+.heroContainer .heroWrapper .cart2 {
+  position: absolute;
+  bottom: 25%;
+  right: 5%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.heroContainer .heroWrapper .theBag {
+  width: 50px;
+  height: 50px;
+  padding: 3px;
+  background: white;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.heroContainer .heroWrapper img {
+  width: 30rem;
+  position: absolute;
+  bottom: 0;
+}
+.heroContainer .heroWrapper .offering {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  box-shadow: #3d7241;
+}
+.heroContainer .heroWrapper .offering .offering > :first-child {
+  display: block;
+  width: 1rem;
+}
+.heroContainer .heroWrapper .theArrow {
+  border-radius: 50%;
+  border: 2px solid skyblue;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  place-items: center;
+}
+.heroContainer .h_sides {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.heroContainer .text1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  width: -moz-min-content;
+  width: min-content;
+  display: block;
+  font-weight: 600;
+}
+.heroContainer .text2 {
+  display: flex;
+  flex-direction: column;
+  width: -moz-min-content;
+  width: min-content;
+}
+.heroContainer .text2 .text2 > :first-child {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.heroContainer .text2 .text2 > :nth-child(2) {
+  display: block;
+}
+.heroContainer .text2 .traffic {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.heroContainer .text2 .traffic .traffic > :first-child {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.heroContainer .text2 .customers {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.heroContainer .text2 .customers .customers > :first-child {
+  font-weight: 800;
+  text-align: right;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 856px) {
+  .heroContainer {
+    grid-template-areas: "left center center" "right right right";
+  }
+  .heroContainer .heroContainer > :first-child {
+    grid-area: left;
+    grid-template-rows: none;
+    gap: 8rem;
+  }
+  .heroContainer .heroContainer > :nth-child(2) {
+    grid-area: center;
+  }
+  .heroContainer .heroContainer > :nth-child(3) {
+    grid-area: right;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+  }
+  .blueCircle {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+  }
+  img {
+    width: 70%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=HeroSection.css.map */

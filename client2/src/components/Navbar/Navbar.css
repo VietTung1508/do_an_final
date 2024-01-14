@@ -1,0 +1,70 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.navbar .main_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 45px;
+}
+.navbar .main_nav .brand_logo {
+  width: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.navbar .main_nav .main_nav_actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.navbar .main_nav .main_nav_actions .action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+}
+.navbar .main_nav .main_nav_actions .action.isCart:hover .cart {
+  display: flex;
+}
+.navbar .main_nav .main_nav_actions .action .cart {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 999;
+}
+.navbar .main_nav .main_nav_actions .action .icon {
+  width: 35px;
+  height: 35px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.navbar .main_nav .main_nav_actions .action .icon {
+  width: 35px;
+  height: 35px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.navbar .main_nav .main_nav_actions .action h3 {
+  font-size: 18px;
+}
+.navbar .main_nav .main_nav_actions .action h3:hover {
+  text-decoration: underline;
+}
+.navbar .sub_nav {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .sub_nav .nav_main_category {
+  display: flex;
+  gap: 30px;
+}
+.navbar .sub_nav .nav_main_category span {
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.navbar .sub_nav .nav_main_category span:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=Navbar.css.map */

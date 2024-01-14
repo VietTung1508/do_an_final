@@ -1,0 +1,28 @@
+.product-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 40px;
+  .right {
+    flex: 4;
+    .title {
+      font-size: 45px;
+      font-weight: 600;
+    }
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 30px;
+    }
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}

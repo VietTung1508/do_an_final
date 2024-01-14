@@ -1,0 +1,72 @@
+.accountSetting {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 80px;
+
+  h3 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  p {
+    margin-top: 6px;
+  }
+
+  .account_profile {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 20px;
+    padding: 15px 25px;
+    width: 70%;
+
+    h4 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .profile_inp {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      label {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      input {
+        padding: 10px 12px;
+        border: 1px solid gray;
+      }
+
+      textarea {
+        padding: 10px 12px;
+        border: 1px solid gray;
+        min-height: 100px;
+      }
+    }
+    .btnSave {
+      background-color: black;
+      color: white;
+      padding: 12px 0;
+      margin-bottom: 20px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .btnCancel {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      padding: 12px 0;
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.card {
+  width: calc(25% - 5px);
+  margin-bottom: 20px;
+
+  &:hover {
+    .image-wrapper {
+      opacity: 0.8;
+    }
+  }
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    transition: all 0.5s ease;
+    .card-image {
+      width: 100%;
+      object-fit: cover;
+    }
+    .icon {
+      position: absolute;
+      top: 3%;
+      right: 3%;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .card-title {
+      padding-top: 10px;
+      font-weight: normal;
+      font-weight: 500;
+      font-size: 16px;
+      height: 40px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .card-price-wrapper {
+      display: flex;
+      gap: 15px;
+      .card-price {
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      .card-price-sale {
+        color: crimson;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+    .colors {
+      display: flex;
+      gap: 5px;
+      .card-color {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-top: 10px;
+      }
+    }
+  }
+}

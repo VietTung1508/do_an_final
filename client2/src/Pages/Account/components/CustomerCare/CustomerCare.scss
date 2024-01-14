@@ -1,0 +1,95 @@
+.customerCare {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 80px;
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .subTitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  .icon {
+    font-size: 35px;
+    color: crimson;
+  }
+  .container {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+
+    button {
+      background-color: black;
+      color: white;
+      padding: 12px 20px;
+      font-weight: bold;
+      margin-top: 10px;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .trackOrder {
+      flex: 1;
+      background-color: white;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      h3 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 17px;
+      }
+      p {
+        font-size: 15px;
+
+        margin-top: 14px;
+      }
+      .trackOrder_inp {
+        width: 100%;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        label {
+          font-size: 14px;
+          margin-bottom: 10px;
+          margin-top: 20px;
+        }
+        input {
+          border: 1px solid gray;
+          width: 100%;
+          padding: 14px 10px;
+        }
+      }
+    }
+
+    .returnOrder {
+      flex: 1;
+      background-color: white;
+      padding: 40px;
+      flex-direction: column;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+      }
+      h3 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 17px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}

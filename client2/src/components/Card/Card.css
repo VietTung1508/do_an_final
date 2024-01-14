@@ -1,0 +1,62 @@
+.card {
+  width: calc(25% - 5px);
+  margin-bottom: 20px;
+}
+.card:hover .image-wrapper {
+  opacity: 0.8;
+}
+.card .image-wrapper {
+  position: relative;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.card .image-wrapper .card-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .image-wrapper .icon {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  width: 24px;
+  height: 24px;
+}
+.card .info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card .info-wrapper .card-title {
+  padding-top: 10px;
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 16px;
+  height: 40px;
+}
+.card .info-wrapper .card-title:hover {
+  text-decoration: underline;
+}
+.card .info-wrapper .card-price-wrapper {
+  display: flex;
+  gap: 15px;
+}
+.card .info-wrapper .card-price-wrapper .card-price {
+  font-weight: 500;
+  font-size: 16px;
+}
+.card .info-wrapper .card-price-wrapper .card-price-sale {
+  color: crimson;
+  font-size: 16px;
+  font-weight: 500;
+}
+.card .info-wrapper .colors {
+  display: flex;
+  gap: 5px;
+}
+.card .info-wrapper .colors .card-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 10px;
+}/*# sourceMappingURL=Card.css.map */

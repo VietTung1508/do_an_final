@@ -1,0 +1,266 @@
+.newProduct {
+  display: flex;
+  flex-direction: column;
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 15px 30px;
+    .icon {
+      padding: 10px;
+      border: 1px solid rgba(128, 128, 128, 0.2);
+      border-radius: 6px;
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      cursor: pointer;
+    }
+    .info {
+      h3 {
+        font-size: 12px;
+        color: rgb(160, 160, 160);
+      }
+
+      h1 {
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+  .newProductContainer {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 15px 30px;
+    gap: 25px;
+    min-height: 100vh;
+    .productImage {
+      flex: 1;
+      background-color: white;
+      border-radius: 10px;
+
+      .title {
+        font-size: 20px;
+        font-weight: 600;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 15px;
+      }
+
+      .upload-noImage {
+        width: 100%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        .inp-image {
+          display: none;
+        }
+
+        .upload-icon {
+          color: black;
+          font-size: 40px;
+        }
+
+        h3 {
+          color: black;
+        }
+      }
+
+      .imgWrapper {
+        padding: 15px;
+
+        width: 100%;
+        position: relative;
+        height: 100%;
+
+        &:hover {
+          .product-image {
+            opacity: 0.8;
+          }
+          .image-action {
+            display: flex;
+          }
+        }
+
+        .product-image {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 7px;
+          transition: all 0.4s ease-out;
+        }
+        .image-action {
+          position: absolute;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          top: 40%;
+          left: 0;
+          right: 0;
+          margin: auto;
+          gap: 13px;
+          display: none;
+          .inp-image {
+            display: none;
+          }
+          .btnReplace {
+            border-radius: 7px;
+            padding: 8px 25px;
+            background-color: white;
+            color: darkgreen;
+            cursor: pointer;
+          }
+
+          .btnRemove {
+            border-radius: 7px;
+            padding: 8px 25px;
+            background-color: white;
+            color: crimson;
+          }
+        }
+      }
+    }
+
+    .generalProduct {
+      flex: 2;
+      background-color: white;
+      border-radius: 10px;
+      .title {
+        font-size: 20px;
+        font-weight: 600;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 15px;
+      }
+
+      .productForm {
+        padding: 15px;
+
+        .inpWrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          margin-bottom: 10px;
+
+          label {
+            font-size: 13px;
+
+            span {
+              opacity: 0.5;
+              margin-left: 5px;
+            }
+          }
+
+          select {
+            border: 0.5px solid rgba(128, 128, 128, 0.2);
+            padding: 7px 10px;
+            border-radius: 5px;
+          }
+
+          input {
+            border: 0.5px solid rgba(128, 128, 128, 0.2);
+            padding: 7px 10px;
+            border-radius: 5px;
+          }
+
+          textarea {
+            border: 1px solid rgba(128, 128, 128, 0.2);
+            padding: 7px 8px;
+            border-radius: 5px;
+          }
+          .wrapperProductSize {
+            display: flex;
+            gap: 10px;
+            .inpWrapperSize {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+
+              input {
+                width: 15px;
+                height: 15px;
+              }
+
+              label {
+                font-size: 15px;
+              }
+            }
+          }
+
+          .wrapperProductColor {
+            display: flex;
+            gap: 10px;
+            .inpWrapperColor {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+
+              input {
+                width: 15px;
+                height: 15px;
+              }
+
+              label {
+                font-size: 15px;
+              }
+
+              .black {
+                accent-color: black;
+              }
+              .white {
+                accent-color: white;
+              }
+              .grey {
+                accent-color: grey;
+              }
+              .blue {
+                accent-color: darkblue;
+              }
+            }
+          }
+        }
+
+        .inpPriceWrapper {
+          display: flex;
+          gap: 15px;
+          :nth-child(1) {
+            flex: 1;
+          }
+          :nth-child(2) {
+            flex: 1;
+          }
+          :nth-child(3) {
+            flex: 1;
+          }
+        }
+
+        .form-action {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 10px;
+          margin-top: 15px;
+
+          .btnReset,
+          .btnUpload {
+            padding: 6px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+
+          .btnReset {
+            color: rgb(69, 161, 197);
+            border: 1px dotted rgba(69, 161, 197, 0.569);
+          }
+
+          .btnUpload {
+            color: green;
+            border: 1px dotted rgba(0, 128, 0, 0.569);
+          }
+        }
+      }
+    }
+  }
+}

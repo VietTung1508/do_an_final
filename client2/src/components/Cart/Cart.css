@@ -1,0 +1,139 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  background-color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+.cart .emptyCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+.cart .emptyCart h2 {
+  font-weight: 700;
+  color: rgba(255, 44, 84, 0.8);
+}
+.cart .emptyCart button {
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #4895ef;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.5s;
+  margin-top: 5px;
+}
+.cart .emptyCart button:hover {
+  opacity: 0.8;
+}
+.cart .cart-items {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 0;
+  overflow-y: auto;
+  max-height: 400px;
+}
+.cart .cart-items .cartItem {
+  display: flex;
+  gap: 20px;
+}
+.cart .cart-items .cartItem .cartItem_img_wrapper {
+  flex: 1;
+}
+.cart .cart-items .cartItem .cartItem_img_wrapper .cartItem_img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cart .cart-items .cartItem .cartItem_info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cart .cart-items .cartItem .cartItem_info .cartItem_title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.cart .cart-items .cartItem .cartItem_info .cartItem_price {
+  display: flex;
+}
+.cart .cart-items .cartItem .cartItem_info .cartItem_price .price_sale {
+  color: crimson;
+}
+.cart .cart-items .cartItem .cartItem_info .cartItem_price .price {
+  font-size: 16px;
+  font-weight: 500;
+}
+.cart .cart-items .cartItem .cartItem_info .cartItem_quan {
+  font-size: 15px;
+}
+.cart .cart-items .cartItem .cartItem_info .cartItem_color {
+  font-size: 15px;
+}
+.cart .cart-items .cartItem .cartItem_info .cartItem_size {
+  font-size: 15px;
+}
+.cart .sub-price {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.cart .sub-price .sub_price_sale {
+  color: crimson;
+}
+.cart .sub-price .sub-price-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cart .price {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+}
+.cart .action_wrapper {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.cart .action_wrapper .actions {
+  margin-top: 30px;
+  width: 100%;
+}
+.cart .action_wrapper .actions .btnPayment {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 12px 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.cart .action_wrapper .actions .btnPayment:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.cart .action_wrapper .actions .btnCart {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 12px 0;
+  font-weight: bold;
+}
+.cart .action_wrapper .actions .btnCart:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=Cart.css.map */

@@ -1,0 +1,25 @@
+.productSideBar {
+  flex: 1;
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+    .section_title {
+      font-size: 17px;
+      font-weight: 600;
+    }
+    p {
+      cursor: pointer;
+
+      &:hover {
+        color: crimson;
+        text-decoration: underline;
+      }
+
+      &.active {
+        color: crimson;
+      }
+    }
+  }
+}

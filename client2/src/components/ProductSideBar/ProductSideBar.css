@@ -1,0 +1,23 @@
+.productSideBar {
+  flex: 1;
+}
+.productSideBar .section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.productSideBar .section .section_title {
+  font-size: 17px;
+  font-weight: 600;
+}
+.productSideBar .section p {
+  cursor: pointer;
+}
+.productSideBar .section p:hover {
+  color: crimson;
+  text-decoration: underline;
+}
+.productSideBar .section p.active {
+  color: crimson;
+}/*# sourceMappingURL=ProductSideBar.css.map */

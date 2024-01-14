@@ -1,0 +1,62 @@
+.account {
+  padding: 20px 80px;
+  display: flex;
+  .left {
+    flex: 2;
+    h1 {
+      font-size: 25px;
+      font-weight: 700;
+
+      padding: 20px 0;
+    }
+    .account_sidebar {
+      display: flex;
+      flex-direction: column;
+      .account_sidebar_item_wrapper {
+        &:nth-child(odd) {
+          background-color: white;
+        }
+        .account_sidebar_item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px;
+          cursor: pointer;
+
+          &:hover {
+            p {
+              color: crimson;
+              text-decoration: underline;
+            }
+          }
+
+          p {
+            font-size: 20px;
+          }
+
+          .icon {
+            width: 30px;
+            height: 30px;
+            color: rgba(0, 0, 0, 0.6);
+          }
+
+          .detailIcon {
+            width: 25px;
+            height: 25px;
+            color: rgba(0, 0, 0, 0.6);
+          }
+
+          .title {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 5;
+  }
+}

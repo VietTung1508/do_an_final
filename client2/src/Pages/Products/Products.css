@@ -1,0 +1,28 @@
+.product-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 40px;
+}
+.product-container .right {
+  flex: 4;
+}
+.product-container .right .title {
+  font-size: 45px;
+  font-weight: 600;
+}
+.product-container .right .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 30px;
+}
+.product-container .right .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.product-container .right .pagination span {
+  font-size: 16px;
+}/*# sourceMappingURL=Products.css.map */

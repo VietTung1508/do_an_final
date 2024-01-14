@@ -1,0 +1,144 @@
+.heroContainer{
+  padding: 8rem 8rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  //background-color: #ecf4f6;
+
+  .heroWrapper{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    position: relative;
+
+    .blueCircle{
+      width: 30rem;
+      height: 30rem;
+      border-radius: 50%;
+      z-index: -99;
+      position: absolute;
+      bottom: 0;
+      background: #2879fe;
+    }
+    .cart2{
+      position: absolute;
+      bottom: 25%;
+      right: 5%;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    .theBag{
+      width: 50px;
+      height: 50px;
+      padding: 3px;
+      background: white;
+      border-radius: 50%;
+      border: 3px solid black;
+    }
+    img{
+      width: 30rem;
+      position: absolute;
+      bottom: 0;
+    }
+    .offering{
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding: 1rem;
+      background: white;
+      font-size: .8rem;
+      border-radius: 1rem;
+      box-shadow: #3d7241;
+
+      .offering > :first-child{
+        display: block;
+        width: 1rem;
+      }
+    }
+    .theArrow{
+      border-radius: 50%;
+      border: 2px solid skyblue;
+      display: flex;
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      place-items: center;
+    }
+  }
+  .h_sides{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+  }
+  .text1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    width: min-content;
+    display: block;
+    font-weight: 600;
+  }
+  .text2{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+
+    .text2 > :first-child{
+      font-weight: 800;
+      font-size: 2.5rem;
+    }
+    .text2 > :nth-child(2){
+      display: block;
+    }
+    .traffic{
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+
+      .traffic > :first-child{
+        font-weight: 800;
+        font-size: 2.5rem;
+
+      }
+    }
+    .customers{
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+
+      .customers > :first-child{
+        font-weight: 800;
+        text-align: right;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 856px) {
+  .heroContainer{
+    grid-template-areas: 'left center center' 'right right right';
+
+    .heroContainer > :first-child{
+      grid-area: left;
+      grid-template-rows: none;
+      gap: 8rem;
+    }
+    .heroContainer > :nth-child(2){
+      grid-area: center;
+    }
+    .heroContainer > :nth-child(3){
+      grid-area: right;
+      display: flex;
+      justify-content: space-around;
+      margin: 2rem 0;
+    }
+  }
+  .blueCircle{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+  }
+  img{
+    width: 70%;
+    height: 100%;
+  }
+}

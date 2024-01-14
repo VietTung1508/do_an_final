@@ -1,0 +1,194 @@
+.payment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  max-width: 1680px;
+  margin: auto;
+}
+.payment .backToCart {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 1%;
+  top: 30px;
+  gap: 20px;
+  cursor: pointer;
+}
+.payment .logo {
+  width: 50px;
+  margin: auto;
+  margin-top: 20px;
+}
+.payment .payment-page-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.payment .payment_container {
+  display: flex;
+  gap: 50px;
+  padding: 0 20px;
+}
+.payment .payment_container .payment_left {
+  flex: 4;
+}
+.payment .payment_container .payment_left .user-infomation {
+  background-color: white;
+  padding: 14px 28px;
+  position: relative;
+}
+.payment .payment_container .payment_left .user-infomation .editBtn {
+  position: absolute;
+  top: 10%;
+  right: 1%;
+  cursor: pointer;
+}
+.payment .payment_container .payment_left .user-infomation .user-infomation-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.payment .payment_container .payment_left .user-infomation .user-infomation-wrapper {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  align-items: center;
+}
+.payment .payment_container .payment_left .user-infomation .user-infomation-wrapper label {
+  font-size: 18px;
+  font-weight: 600;
+}
+.payment .payment_container .payment_left .user-infomation .user-infomation-wrapper p {
+  font-size: 18px;
+}
+.payment .payment_container .payment_left .user-infomation .user-infomation-wrap {
+  display: flex;
+}
+.payment .payment_container .payment_left .user-order-details {
+  background-color: white;
+  padding: 15px 28px;
+}
+.payment .payment_container .payment_left .user-order-details .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.payment .payment_container .payment_left .user-order-details .header .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.payment .payment_container .payment_left .user-order-details .header .left p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.payment .payment_container .payment_left .user-order-details .header .left span {
+  font-size: 15px;
+}
+.payment .payment_container .payment_left .user-order-details .header .left .icon {
+  font-size: 30px;
+}
+.payment .payment_container .payment_left .user-order-details .header .right {
+  display: flex;
+  flex-direction: column;
+}
+.payment .payment_container .payment_left .user-order-details .header .right h3 {
+  font-size: 14px;
+}
+.payment .payment_container .payment_left .user-order-details .header .right p {
+  font-size: 12px;
+  font-weight: 600;
+  color: crimson;
+  justify-content: flex-end;
+  display: flex;
+}
+.payment .payment_container .payment_left .user-order-details .details-list {
+  display: flex;
+  gap: 15px;
+}
+.payment .payment_container .payment_left .user-order-details .details-list .detail-image-wrapper {
+  width: 140px;
+}
+.payment .payment_container .payment_left .user-order-details .details-list .detail-image-wrapper .detail-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.payment .payment_container .title-detail-order {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.payment .payment_container .title-detail-order h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.payment .payment_container .title-detail-order span {
+  font-size: 14px;
+}
+.payment .payment_container .price_sale {
+  color: crimson;
+  font-weight: 600;
+}
+.payment .payment_container .payment_right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: white;
+}
+.payment .payment_container .payment_right .payemnt-discounts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.payment .payment_container .payment_right .payemnt-discounts h3 {
+  color: rgba(0, 0, 0, 0.5);
+}
+.payment .payment_container .payment_right .payemnt-discounts p {
+  text-decoration: underline;
+}
+.payment .payment_container .payment_right .payment-right-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 0;
+}
+.payment .payment_container .payment_right .payment-right-price .payment-right-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.payment .payment_container .payment_right .payment-right-price .payment-right-info h3 {
+  color: rgba(0, 0, 0, 0.5);
+}
+.payment .payment_container .payment_right .payment-right-price .payment-right-info p {
+  font-weight: 600;
+}
+.payment .payment_container .payment_right .total_price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.payment .payment_container .payment_right .btnPayment {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 12px 0;
+  margin-top: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.payment .payment_container .payment_right .btnPayment:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.payment .payment_container .payment_right .dk {
+  font-size: 12px;
+  margin-top: 20px;
+}/*# sourceMappingURL=Payment.css.map */
